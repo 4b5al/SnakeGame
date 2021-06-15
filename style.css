@@ -1,15 +1,14 @@
 canvas{
-    background: black;
-    border: solid 2px green;
+    background: black;   
     border-radius: 2%;
-    z-index: 1000;
+  
+  
+
 }
 
 .bgendalert{
     width: 100%;
-    height: 100%;
-    background-color: green;
-    z-index: 1020;
+    height: 100%;   
     display: flex;
     position: relative;
 }
@@ -21,7 +20,6 @@ canvas{
     align-items: center;
     align-self: center;
     justify-content: center;
-    z-index: 1000;
     position: static;
     display: none;
 }
@@ -31,31 +29,36 @@ canvas{
 }
 
 #canvasposition{
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-    z-index: 1000;
+    align-items: flex-start;
+    align-self: flex-start;
+    justify-content: flex-start;
 }
 
 #tablecontainer{
     align-self: flex-start;
-    justify-content: flex-end;
-    align-items: flex-start;
-    a
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100PX;
+    height: 100PX;
+    
 }
 
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 20px;
+    align-self: flex-end;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    
   }
   
-tr:nth-child(even) {
+  tr:nth-child(even) {
     background-color: #dddddd;
   }
