@@ -1,7 +1,7 @@
 canvas{
     background: black;   
     border-radius: 2%;
-  
+
   
 
 }
@@ -11,6 +11,7 @@ canvas{
     height: 100%;   
     display: flex;
     position: relative;
+    margin-top: 100px;
 }
 
 .endscreen{
@@ -40,6 +41,7 @@ canvas{
     align-items: flex-end;
     width: 100PX;
     height: 100PX;
+    margin-left: 10%;
     
 }
 
@@ -62,3 +64,11 @@ td, th {
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+
+.titleHeader{
+    display: flex;
+}  
+
+h1{
+   text-align: center;
+}

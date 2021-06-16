@@ -111,22 +111,12 @@ function checkFood() {
 
         dots++;
         locateFood();
-        score = 1;
-        console.log(score );
-
-        score = document.getElementById("score").innerHTML = ;
+        console.log(dots - 3);
+        score = document.getElementById('score').innerHTML = dots -3;
     }
 
 }
 
-function count(){
-    if(head == food_x && head == food_y){
-        
-        console.log("yay");
-
-        score = document.getElementById("score").innerHTML = score++;
-     } 
-}
 
 
 function move() {
@@ -195,7 +185,7 @@ function gameCycle() {
         checkFood();
         checkCollision();
         move();
-        count();
+        //count();
         doDrawing();
         setTimeout("gameCycle()", DELAY);
     }
