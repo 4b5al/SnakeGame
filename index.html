@@ -7,30 +7,20 @@
         
 </head>
     
-<body onload="init();">
-    <header>
-        <div id = "titleHeader" class="container">
-            <div class="col-sm-12">
-                <h1>Snake Game by 4bsal</h1>
-            </div>
-        </div>
-    </header>
+<body >
     <div class="bgendalert">
-        <div class="endscreen">
+        <div class="initmodal">
+            <h1>Snake Game by 4b5al</h1>
             <form action="post">
                 <span> Pontos: <p id="score">0</p></span>
-            </form>
-            <form action="post">
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nick!">
-            </form>
-            <button type="button" class="btn btn-success">Jogar novamente</button>
-            <button type="button" class="btn btn-primary">Salvar</button>
+            </form>               
+            <button onclick="init();  closeInitModal();" type="button" id="btnpos" class="btn btn-primary"> Iniciar</button>
         </div>
 
         <div class="container">
             <div id="canvasposition" class="row">
                 <div class="col-2">
-                    <span> Score: <p id="score"> 0</p></span>
+                    <span> Score: <n id="score"> 0</N></span>
                 </div>
                 <div class="col-6">
                     
@@ -66,12 +56,11 @@
     </div>
 
     
-    <script src="snake.js"></script>
-
+    
     <script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous">
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
     </script>
 
     <script 
@@ -79,5 +68,7 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
         crossorigin="anonymous">
     </script>
+    <script src="snake.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

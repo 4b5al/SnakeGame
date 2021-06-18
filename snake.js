@@ -1,7 +1,7 @@
 
 var canvas;
 var ctx;
-var score;
+
 
 var head;
 var food;
@@ -112,7 +112,7 @@ function checkFood() {
         dots++;
         locateFood();
         console.log(dots - 3);
-        score = document.getElementById('score').innerHTML = dots -3;
+        var score = document.querySelector('#score').innerText = 'dots - 3';     
     }
 
 }

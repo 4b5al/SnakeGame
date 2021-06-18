@@ -1,39 +1,47 @@
+body{
+    padding: none;
+    border: none;
+    margin: none;
+}
+     
 canvas{
     background: black;   
     border-radius: 2%;
-
-  
-
+    display: block;
+    margin-top: 150px;
+    cursor: hidden;
 }
+
 
 .bgendalert{
     width: 100%;
     height: 100%;   
-    display: flex;
-    position: relative;
-    margin-top: 100px;
+    display: block;
+    position: absolute;
+    background: #E0FFFF	;
+    transform: translate(-505, -50%);
+    
 }
 
-.endscreen{
-    background-color: grey;
-    width: 300px;
-    height: 300px;
+.initmodal{
+    background-color: #00BFFF;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    display: block;
     align-items: center;
     align-self: center;
     justify-content: center;
-    position: static;
-    display: none;
+    border-radius: 5%;
+    left: 35%;
+    top: 10%;
 }
 
 .form-control{
     width: 50%;
 }
 
-#canvasposition{
-    align-items: flex-start;
-    align-self: flex-start;
-    justify-content: flex-start;
-}
+
 
 #tablecontainer{
     align-self: flex-start;
@@ -71,4 +79,9 @@ td, th {
 
 h1{
    text-align: center;
+}
+
+#btnpos{
+   margin-top: 300px;
+   margin-left: 200px;
 }
